@@ -10,7 +10,7 @@ let message = null
 let isAlive = true
 const playerName = getParameterByName('name');
 document.getElementById("player").textContent= playerName
-
+document.getElementById("imgcard1").src="/images/2_of_clubs.png"
 const player={
     name: playerName,
     coins:5000,
@@ -53,15 +53,17 @@ function newCard(){
 
 
 
+// FUNCTIONS---------------------------------------------------------------------------------------
+function toggleMute() {
+    const musicPlayer = document.getElementById("musicPlayer");
+    musicPlayer.muted = !musicPlayer.muted;
+}
+
 function getParameterByName(name) {
     // Get the player name from the URL query parameter
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get(name);
 }
-
-
-
-
 
 function generateCards(){
     //cardgenerator random 

@@ -9,7 +9,7 @@
 </head>
 <body>
         <div class="image-container">
-            <img src="" alt="CARD1">
+            <img id="imgcard1"src="" alt="CARD1" width="200" height="200">
         </div>
         <div class="image-container">
             <img src="" alt="CARD2">
@@ -18,6 +18,13 @@
         <p id="sum"></p>
         <p id="display"></p>
         <p id="player"></p>
+        <button onclick="toggleMute()">Mute</button>
+
+        <audio id="musicPlayer" autoplay>
+            <source src="home.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        
         <div class="button-container">
             <button onclick="startGame()">START</button>
             <button onclick="newCard()">NEWCARD</button>
