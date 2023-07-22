@@ -4,32 +4,27 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Image Containers and Buttons</title>
-    <style>
-    </style>
+    <link rel="stylesheet" href="startgame.css">
 </head>
 <body>
         <div class="image-container">
             <img id="imgcard1"src="" alt="CARD1" width="200" height="200">
+            <img id="imgcard2"src="" alt="CARD2" width="200" height="200">
+            <img class="hide" id="imgcard3"src="" width="200" height="200">
         </div>
-        <div class="image-container">
-            <img src="" alt="CARD2">
-        </div>
-        <p id="cards"></p>
         <p id="sum"></p>
-        <p id="display"></p>
-        <p id="player"></p>
-        <button onclick="toggleMute()">Mute</button>
+        <!-- <button onclick="toggleMute()">Mute</button> -->
 
         <audio id="musicPlayer" autoplay>
             <source src="home.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
-        
-        <div class="button-container">
-            <button onclick="startGame()">START</button>
-            <button onclick="newCard()">NEWCARD</button>
-        </div>
-    </div>
+        <!-- <div class="glow-on-hover"> -->
+            <button class="glow-on-hover" onclick="startGame()">START</button>
+            <button class="glow-on-hover" onclick="newCard()">NEWCARD</button>
+        <!-- </div> -->
+
+        <p class="message"  id="display"></p>
     <script src="index.js"></script>
 </body>
 </html>
