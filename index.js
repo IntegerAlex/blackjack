@@ -54,7 +54,7 @@ function display(sum){
         player.coins=player.coins+5000
         player.win=true
         result()
-        setTimeout(result, 10000);
+        setTimeout(result, 3000);
     }
     else if(sum<21){
         message="you want to draw a new card"
@@ -65,7 +65,7 @@ function display(sum){
         player.coins=0;
         lost=true
         // loose()
-        setTimeout(loose, 5000);
+        setTimeout(loose, 3000);
     }
     return message
 }
@@ -84,7 +84,7 @@ function newCard(){
         displayy.textContent = "Nahhh better luck next time"
         lost = true
         // loose()
-        setTimeout(loose, 5000);
+        setTimeout(loose, 3000);
     }
     }
 }
